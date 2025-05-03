@@ -1,0 +1,200 @@
+.feedback-section{
+    margin-top: 180px;
+    &__title::before{
+        content: "";
+        background-image: url(/img/Underline_5.svg);
+        width: 653px;
+        height: 30px;
+        position: absolute;
+        left: 49%;
+        top: 47px;
+        transform: translate(-50%);
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__subtitle{
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 12px;
+        margin-bottom: 80px;
+    }
+    &__btn-group{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 920px;
+        margin: 0px auto;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        height: 84px;
+        max-width: 100%;
+        width: 280px;
+        padding-left: 20px;
+        background-color: rgba($color: #fff, $alpha: 0.15);
+    }
+    &__social-media-name{
+        font-size: 18px;
+        line-height: 28px;
+        color: #10151A;
+        font-weight: 600;
+        text-align: left;
+        &_white{
+            color: white;
+        }
+    }
+    &__social-media-link{
+        font-size: 16px;
+        line-height: 24px;
+        color: #10151A;
+        font-weight: 400;
+        opacity: 0.7;
+        &_white{
+            color: white;
+        }
+    }
+}
+
+.social-madia-logo-bg{
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(16, 21, 26, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_darken{
+        background-color: rgba($color: #10151A, $alpha: 0.2);
+    }
+}
+.social-madia-logo{
+    color: black;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width:1119px) {
+    .feedback-section{
+        margin-top: 120px;
+
+        &__title::before{
+            width: 550px;
+            height: 30px;
+            left: 49%;
+            top: 26px;
+        }
+
+        &__subtitle{
+            font-size: 18px;
+            line-height: 32px;
+            margin-top: 24px;
+            margin-bottom: 60px;
+        }
+
+        &__btn-group{
+            gap: 24px;
+            max-width: 735px;
+        }
+
+        &__btn{
+            height: 76px;
+            width: 229px;
+            padding-left: 16px;
+        }
+
+        &__social-media-name{
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__social-media-link{
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    .social-madia-logo-bg{
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+    }
+    .social-madia-logo{
+        width: 24px;
+        height: 24x;
+    }
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .feedback-section{
+        
+        margin-top: 80px;
+        max-width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        &__title::before{
+            background-image: url(/img/Underline_5_mobile.svg);
+            width: 168px;
+            height: 17px;
+            left: 49%;
+            top: 48px;
+        }
+
+        &__title{
+            max-width: 250px;
+            margin: 0px auto;
+        }
+
+        &__subtitle{
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 22px;
+            margin-bottom: 38px;
+        }
+
+        &__btn-group{
+            gap: 16px;
+            max-width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0px auto;
+        }
+
+        &__btn{
+            gap: 12px;
+            height: 64px;
+            width: 207px;
+            padding-left: 12px;
+            margin: 0px auto;
+            border-radius: 12px;
+        }
+
+        &__social-media-name{
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &__social-media-link{
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+    }
+
+    .social-madia-logo-bg{
+        width: 40px;
+        height: 40px;
+    }
+}

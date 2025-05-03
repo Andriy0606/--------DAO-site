@@ -1,0 +1,114 @@
+.superpowers-section{
+    margin-top: 296px;
+    background-color: var(--body-bcg-color);
+    h2{
+        position: relative;
+        z-index: 1;
+    }
+    h2::after{
+        content: "";
+        position: absolute;
+        background-image: url(/img/Underline_2.svg);
+        height: 30px;
+        width: 584px;
+        background-repeat: no-repeat;
+        top: 51px ;
+        left: 281px;
+        z-index: -1;
+        background-size: contain;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 66px;
+        margin-top: 60px;
+    }
+    &__list li{
+        font-size: 20px;
+        line-height: 48px;
+        font-weight: normal;
+    }
+    &__list li::marker{
+        color: var(--lightnen-brand-color);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1119px) {
+    .superpowers-section{
+        margin-top: 120px;
+        &__img{
+            height: 188px;
+            width: auto;
+        }
+        &__list li{
+            font-size: 16px;
+            line-height: 36px;
+        }
+        &__content{
+            gap: 44px;
+            margin-top: 41px;
+        }
+        h2::after{
+            width: 492px;
+            top: 24px ;
+            left: 114px;
+        }
+
+        
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .superpowers-section{
+        margin-top: 80px;
+
+        &__content{
+            display: block;
+            margin-top: 32px;
+        }
+
+        h2::after{
+            width: 343px;
+            top: 17px ;
+            left: 10px;
+        }
+
+        &__img{
+            width: 100%;
+            height: auto;
+        }
+
+        &__list{
+            padding-left: 52px;
+            margin-top: 17px;
+        }
+
+        &__list li{
+            font-size: 15px;
+            line-height: 28px;
+            
+        }
+
+
+
+    }
+}
+
+
+@media screen and (max-width:368px) {
+    .superpowers-section{
+        h2::after{
+            width: 205px;
+            height: 16px;
+            top: 49px ;
+            left: 37px;
+        }
+
+        &__list{
+            padding-left: 12px;
+        }
+    }
+}

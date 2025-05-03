@@ -1,0 +1,119 @@
+.hero-section {
+    margin-top: 223px;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 72px;
+        line-height: 80px;
+        letter-spacing: -2px;
+        position: relative;
+    }
+
+    &__description {
+        margin: 32px auto;
+        font-size: 24px;
+        line-height: 40px;
+        opacity: 0.7;
+        max-width: 723px;
+        margin-bottom: 60px;
+    }
+
+    &__title::after {
+        content: "";
+        position: absolute;
+        background-image: url(/img/Underline_1.png);
+        background-size: contain;
+        width: 159px;
+        height: 34px;
+        background-repeat: no-repeat;
+        top: 45px;
+        left: 436px;
+        z-index: -1
+    }
+}
+
+.call-to-action-btn {
+    color: #10151A;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+    background: linear-gradient(var(--lightnen-brand-color), #FFB800);
+    padding: 16px 32px;
+    word-spacing: 1px;
+    box-shadow: 0px 9px 44px rgba(255, 214, 0, 0.19);
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1119px) {
+    .hero-section {
+        margin-top: 116px;
+
+        &__title {
+            font-size: 52px;
+            line-height: 60px;
+            letter-spacing: 0px;
+        }
+        &__title::after {
+            width: 117px;
+            height: 24px;
+            top: 33px;
+            left: 268px;
+        }
+
+        &__description {
+            margin: 24px auto;
+            font-size: 20px;
+            line-height: 36px;
+            margin-bottom: 52px;
+        }
+    }
+    .call-to-action-btn {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 12px 24px;
+        word-spacing: 0px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .hero-section {
+        margin-top: 56px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+            width: 238px;
+            margin: 0px auto;
+            letter-spacing: 0px;
+        }
+        &__title::after {
+            width: 77px;
+            height: 15px;
+            top: 22px;
+            left: 163px;
+        }
+
+        &__description {
+            margin: 16px auto;
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+
+        &__description > br{
+           display: none;
+        }
+    }
+    .call-to-action-btn {
+        font-size: 15px;
+        line-height: 24px;
+        padding: 12px 20px;
+        word-spacing: 0px;
+    }
+
+
+}

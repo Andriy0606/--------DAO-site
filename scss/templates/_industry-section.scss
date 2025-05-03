@@ -1,0 +1,187 @@
+.industry-section {
+    margin-top: 163px;
+
+    & h2 {
+        max-width: 605px;
+        margin: 0 auto 0 271px;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
+    & h2::before {
+        content: "";
+        position: absolute;
+        background-image: url(/img/Underline_3.svg);
+        height: 100%;
+        width: 650px;
+        background-repeat: no-repeat;
+        top: 51px;
+        left: -28px;
+        z-index: -1;
+        background-size: contain;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    &__item {
+        max-width: 358px;
+        width: 100%;
+        height: 116px;
+        background-color: var(--article-bgc-color);
+        border: solid 2px var(--article-border-color);
+        border-radius: 16px;
+        padding: 24px 28px;
+
+        &-top {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+
+            & h4 {
+                color: var(--lightnen-brand-color);
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+
+        &-bottom {
+            margin-top: 12px;
+
+            & p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.secret_word{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1119px) {
+    .industry-section {
+        margin-top: 100px;
+        padding-top: 16px;
+        background-color: #10151A;
+
+        & h2 {
+            max-width: 605px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        &__item:nth-child(9) {
+            grid-column: 1 / 3;
+            justify-self: center;
+        }
+
+        & h2::before {
+            width: 540px;
+            top: 29px;
+            left: 26px;
+        }
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .industry-section {
+        background-color: #10151A;
+        margin-top: 80px;
+
+        & h2 {
+            max-width: 605px;
+            margin: 0 auto;
+
+            margin-bottom: 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        & h2::before {
+            width: 368px;
+            top: 19px;
+            left: 0px;
+        }
+
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 16px;
+            padding: 0px 40px;
+        }
+
+        &__item {
+            height: 52px;
+            background-color: transparent;
+            border: none;
+
+            padding: 0px;
+    
+            &-top {
+                gap: 12px;
+    
+                & h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+
+            &-top img{
+                width: 24px;
+                height: auto;
+            }
+
+            &-bottom {
+                margin-top: 4px;
+    
+                & p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        &__item:first-child .industry-section__item-top {
+            gap: 8px;
+        }
+    }
+
+
+
+    .secret_word{
+        display: inline;
+    }
+}
+
+
+@media screen and (max-width:368px) {
+    .industry-section{
+        & h2::before {
+            background-image: url(/img/Underline_3_mobile.svg);
+            width: 151px;
+            height: 15px;
+            top: 49px;
+            left: 66px;
+        }
+
+        &__content {
+            padding: 0px;
+        }
+    }
+}

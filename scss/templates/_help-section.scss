@@ -1,0 +1,483 @@
+.help-section {
+    margin-top: 160px;
+
+    &__title::before {
+        content: "";
+        background-image: url(/img/Underline_4.svg);
+        width: 871px;
+        height: 30px;
+        position: absolute;
+        left: 49%;
+        top: 47px;
+        transform: translate(-50%);
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.network {
+    background-color: var(--article-bgc-color);
+    border: solid 2px var(--article-border-color);
+    border-radius: 16px;
+    padding-top: 52px;
+    padding-bottom: 86px;
+    margin-top: 55px;
+
+    &__title {
+        color: #FFD501;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__chips {
+        display: flex;
+        justify-content: center;
+        gap: 24px
+    }
+
+    &__chip {
+        background-color: #222D37;
+        padding: 8px 28px 8px;
+        border-radius: 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__chip-marker {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: var(--lightnen-brand-color);
+        border-radius: 50px;
+        margin-right: 15px;
+        position: relative;
+        z-index: 1;
+        margin-right: 0px;
+    }
+
+    &__chip-marker::before {
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200%; // вдвічі більший за сам маркер
+        height: 200%;
+        position: absolute;
+        z-index: -1;
+        background-color: var(--lightnen-brand-color);
+        opacity: 0.2;
+        border-radius: 50px;
+    }
+
+    &__chip-text {
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 52px;
+        justify-content: center;
+        margin-top: 58px;
+    }
+
+    &__card {
+        max-width: 458px;
+        width: 100%;
+        height: 516px;
+        border-radius: 16px;
+        padding-top: 36px;
+
+        &_left {
+            background: linear-gradient(135deg, #A96BF7, #3103B5);
+            box-shadow: 0px 9px 44px rgba(90, 38, 204, 0.19);
+        }
+
+        &_right {
+            background: linear-gradient(#BE5780, #DA621D);
+            box-shadow: 0px 9px 44px rgba(255, 107, 0, 0.19)
+        }
+    }
+
+    &__card-title {
+        color: #FFD501;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    &__card-subtitle {
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 400;
+        opacity: 0.8;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__card-list {
+        list-style: none;
+        margin-left: 48px;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__point {
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 500;
+    }
+
+
+}
+
+.demonstration {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__picture {
+        border-radius: 24px;
+        margin-bottom: 36px;
+        flex-grow: 2;
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        color: #FFD501;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    &__ecosystem {
+        width: 50%;
+        text-align: center;
+    }
+
+    &__button {
+        background-color: #161D24;
+        border: 2px solid #2A3744;
+        border-radius: 12px;
+        font-size: 18px;
+        line-height: 40px;
+        padding: 6px 24px;
+        margin: 20px auto;
+    }
+}
+
+.support {
+    text-align: center;
+    width: 50%;
+
+    &__icons-group {
+        margin: 24px auto;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width: 1120px) {
+    .network__icon-bgc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 10px;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1119px) {
+    .help-section {
+        margin-top: 100px;
+
+        &__title::before {
+            width: 726px;
+            height: 30px;
+            left: 49%;
+            top: 31px;
+        }
+    }
+
+    .network {
+        padding-bottom: 41px;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__chip-text {
+            font-size: 15px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+
+        &__chips {
+            gap: 18px
+        }
+
+        &__chip {
+            padding: 6px 20px;
+            gap: 10px;
+        }
+
+        &__chip-marker {
+            width: 8px;
+            height: 8px;
+        }
+
+
+        &__cards {
+            gap: 24px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        &__card-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__card-subtitle {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+
+        &__point {
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+        &__card {
+            max-width: 312px;
+            height: 324px;
+            padding-top: 24px;
+        }
+
+        &__card-list {
+            margin-left: 32px;
+        }
+
+
+        &__list-item {
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .demonstration {
+        margin-top: 60px;
+
+        &__picture {
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__button {
+            font-size: 14px;
+            line-height: 24px;
+
+            padding: 10px 14px;
+            margin: 12px auto;
+        }
+    }
+
+    .support {
+        &__icons-group {
+            margin: 16px auto;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        &__icon {
+            height: 36px;
+            width: auto;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    .help-section {
+        margin-top: 80px;
+
+        &__title::before {
+            background-image: url(/img/Underline_2_mobile.svg);
+            width: 188px;
+            height: 30px;
+            left: 49%;
+            top: 48px;
+        }
+    }
+
+    .network {
+        background: transparent;
+        border: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 24px;
+
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 12px;
+        }
+
+        &__chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px
+        }
+
+        &__chip {
+            background-color: #222D37;
+            padding: 8px 17px 8px;
+            border-radius: 12px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        &__chip-marker {
+            width: 8px;
+            height: 8px;
+        }
+
+        /* DAO creators */
+        .network__chip:nth-child(1) { 
+            order: 1;
+        }
+
+        /* Investors */
+        .network__chip:nth-child(2) {
+            order: 2;
+        }
+
+        /* Contributors (останній) */
+        .network__chip:nth-child(3) {
+            order: 4;
+        }
+
+        /* Lawyers */
+        .network__chip:nth-child(4) {
+            order: 3;
+        }
+
+        &__chip-text {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+
+        &__cards {
+            gap: 16px;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        &__card {
+            max-width: 288px;
+            height: 251px;
+            padding-top: 16px;
+        }
+
+        &__card-title {
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        &__card-subtitle {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
+        &__card-list {
+            margin-left: 24px;
+        }
+
+        &__point {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+
+        &__list-item {
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        &__icon{
+            height: 20px;
+            width: auto;
+        }
+    }
+
+
+
+    .demonstration {
+        margin-top: 32px;
+
+        &__picture {
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        &__ecosystem {
+            width: 100%;
+        }
+
+        &__support{
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__button {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 6px 14px;
+            margin: 12px auto;
+        }
+    }
+
+    .support{
+        width: 100%;
+        margin-top: 12px;
+
+        &__icons-group {
+            margin: 12px auto;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        &__icon {
+            height: 28px;
+            width: auto;
+        }
+    }
+}

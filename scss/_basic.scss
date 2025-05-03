@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "PT Mono";
+}
+body{
+    background-image: url(../img/BG\ Stars.jpg);
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    font-family: "PT Mono";
+    background-color: var(--body-bcg-color);
+    margin: 0px;
+    width: 100%;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:1119px){
+    .container{
+        max-width: 736px;
+    }
+}
+
+
+@media screen and (min-width: 369px) and (max-width:767px){
+    .container{
+        max-width: 368px;
+    }
+}
+
+@media screen and (max-width:368px) {
+    .container{
+        max-width: 288px;
+    }
+}
