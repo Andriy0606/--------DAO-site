@@ -3,7 +3,7 @@
 
     &__title::before {
         content: "";
-        background-image: url(/img/Underline_4.svg);
+        background-image: url(../img/Underline_4.svg);
         width: 871px;
         height: 30px;
         position: absolute;
@@ -323,7 +323,7 @@
         margin-top: 80px;
 
         &__title::before {
-            background-image: url(/img/Underline_2_mobile.svg);
+            background-image: url(../img/Underline_2_mobile.svg);
             width: 188px;
             height: 30px;
             left: 49%;

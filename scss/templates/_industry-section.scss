@@ -12,7 +12,7 @@
     & h2::before {
         content: "";
         position: absolute;
-        background-image: url(/img/Underline_3.svg);
+        background-image: url(../img/Underline_3.svg);
         height: 100%;
         width: 650px;
         background-repeat: no-repeat;
@@ -173,7 +173,7 @@
 @media screen and (max-width:368px) {
     .industry-section{
         & h2::before {
-            background-image: url(/img/Underline_3_mobile.svg);
+            background-image: url(../img/Underline_3_mobile.svg);
             width: 151px;
             height: 15px;
             top: 49px;

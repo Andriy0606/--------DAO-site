@@ -2,7 +2,7 @@
     margin-top: 180px;
     &__title::before{
         content: "";
-        background-image: url(/img/Underline_5.svg);
+        background-image: url(../img/Underline_5.svg);
         width: 653px;
         height: 30px;
         position: absolute;
@@ -146,7 +146,7 @@
         text-align: center;
 
         &__title::before{
-            background-image: url(/img/Underline_5_mobile.svg);
+            background-image: url(../img/Underline_5_mobile.svg);
             width: 168px;
             height: 17px;
             left: 49%;
